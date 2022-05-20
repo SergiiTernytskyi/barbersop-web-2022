@@ -1,0 +1,325 @@
+:root {
+  --main-title-color: #ffffff;
+  --second-title-color: #303030;
+
+  --accent-color: #ff6c00;
+
+  --primary-text-color: #303030;
+  --secondary-text-color: #555555;
+  --third-text-color: #9da4bd;
+  --fourth-text-color: #ffffff;
+  --fifth-text-color: rgba(157, 164, 189, 0.6);
+
+  --main-bg-color: #191c26;
+  --second-bg-color: rgba(25, 28, 38, 0.2);
+
+  --btn-primary-color: #303030;
+  --btn-secondary-color: #ffffff;
+}
+
+body {
+  font-family: 'Open Sans', 'Tahoma', sans-serif;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Making the title hidden */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.button.btn-primary {
+  color: var(--btn-secondary-color);
+  background-color: var(--second-bg-color);
+}
+
+.button.btn-primary:hover,
+.button.btn-primary:focus {
+  background-color: var(--accent-color);
+}
+
+.button.btn-secondary {
+  color: var(--primary-text-color);
+  background-color: var(--btn-secondary-color);
+}
+
+.button.btn-secondary:hover,
+.button.btn-secondary:focus {
+  color: var(--btn-secondary-color);
+  background-color: var(--accent-color);
+}
+
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Raleway';
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* ----------------------------------Header--------------------------------- */
+/* -----Navigation menu----- */
+.header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  background-color: var(--main-bg-color);
+}
+
+.header-item,
+.header-tel {
+  color: var(--fourth-text-color);
+}
+
+.header-item:hover,
+.header-item:focus {
+  color: var(--accent-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+/* ----------------------------------Hero--------------------------------- */
+/* -----Side part of hero----- */
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: inherit;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero upper text */
+.hero-top-text {
+  letter-spacing: 0.2em;
+  color: var(--fifth-text-color);
+}
+
+.hero-content {
+  background-color: var(--main-bg-color);
+}
+
+/* -----Hero title----- */
+.hero-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--main-title-color);
+}
+
+/* -----Hero paragraph----- */
+.hero-text {
+  color: var(--third-text-color);
+}
+
+/* ----------------------------------About--------------------------------- */
+.about-top-text {
+  color: var(--primary-text-color);
+}
+
+.about-title {
+  color: var(--primary-text-color);
+}
+
+.about-bottom-text {
+  color: var(--secondary-text-color);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/* ----------------------------------Prices section--------------------------------- */
+.prices {
+  background-color: var(--main-bg-color);
+}
+
+.prices-top-text {
+  color: var(--fifth-text-color);
+}
+
+.prices-title {
+  color: var(--main-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+/* ----------------------------------Benefits section--------------------------------- */
+.benefits-accent {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: var(--primary-text-color);
+}
+
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--primary-text-color);
+}
+
+.benefits-top-text {
+  color: var(--primary-text-color);
+}
+
+.benefits-title {
+  color: var(--primary-text-color);
+}
+
+.benefits-bottom-text {
+  color: var(--secondary-text-color);
+}
+
+/* ----------------------------------Masters--------------------------------- */
+.masters-top-text {
+  color: var(--primary-text-color);
+}
+
+.masters-title {
+  color: var(--primary-text-color);
+}
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+
+.masters-text {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* ----------------------------------Works section--------------------------------- */
+.works-top-text {
+  color: var(--primary-text-color);
+}
+
+/* ----------------------------------Online section--------------------------------- */
+.online {
+  background-color: var(--main-bg-color);
+}
+
+.online-title {
+  color: var(--main-title-color);
+}
+
+/* ----------------------------------Contacts--------------------------------- */
+.contacts {
+  background-color: var(--main-bg-color);
+}
+
+.contacts-title {
+  color: var(--main-title-color);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-top-text {
+  color: var(--main-title-color);
+}
+
+.contacts-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+/* ----------------------------------Footer--------------------------------- */
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--third-text-color);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: inherit;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
