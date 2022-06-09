@@ -20,23 +20,23 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header class="header">
+    <header class="page-header">
       <div class="container">
         <nav class="header-nav">
-          <a href="" aria-label="logo">
-            <svg class="logo" width="40" height="32">
+          <a href="" aria-label="logo" class="logo-link">
+            <svg class="logo" width="70" height="55">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
-
-            <!-- <img src="./images/Logo.svg" alt="Логотип сайту" class="logo"
-          /> -->
           </a>
           <ul class="header-list list">
-            <li class="header-item"><a href="" class="header-item link">Про нас</a></li>
-            <li class="header-item"><a href="" class="header-item link">Послуги та ціни</a></li>
-            <li class="header-item"><a href="" class="header-item link">Майстри</a></li>
-            <li class="header-item"><a href="" class="header-item link">Контакти</a></li>
+            <li class="header-item"><a href="#about" class="header-item link">Про нас</a></li>
+            <li class="header-item">
+              <a href="#prices" class="header-item link">Послуги та ціни</a>
+            </li>
+            <li class="header-item"><a href="#masters" class="header-item link">Майстри</a></li>
+            <li class="header-item"><a href="#contacts" class="header-item link">Контакти</a></li>
           </ul>
         </nav>
         <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
@@ -47,18 +47,21 @@
     <main>
       <section class="hero">
         <div class="container">
-          <ul class="hero-social list">
-            <li class="hero-item">
-              <a href="" target="_blank" rel="noopener noreferer nofollow" class="hero-link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a href="" target="_blank" rel="noopener noreferer nofollow" class="hero-link link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc-wrap">
+            <ul class="hero-social list">
+              <li class="hero-item">
+                <a href="" target="_blank" rel="noopener noreferer nofollow" class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a href="" target="_blank" rel="noopener noreferer nofollow" class="hero-link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-content">
             <p lang="en" class="hero-top-text top-text">A hair salon for men in Kyiv</p>
             <h1 lang="en" class="hero-title">BarberShop</h1>
@@ -91,7 +94,7 @@
           </ul>
           <div class="about-content">
             <p class="about-top-text top-text">Про нас</p>
-            <h2 class="about-title title">Кращий Барбершоп твого міста</h2>
+            <h2 id="about" class="about-title title">Кращий Барбершоп твого міста</h2>
             <p class="about-bottom-text bottom-text">
               Якщо ти хочеш додати до свого образу більше упевненості - тобі точно до нас.
             </p>
@@ -109,7 +112,7 @@
       <section class="prices section">
         <div class="container">
           <p class="prices-top-text top-text">Проведи час в компанії найкращих майстрів</p>
-          <h2 class="prices-title title">Послуги та ціни</h2>
+          <h2 id="prices" class="prices-title title">Послуги та ціни</h2>
           <div class="prices-wrap">
             <ul class="price-list list price-list-right">
               <li class="prices-item">
@@ -175,7 +178,7 @@
           </ul>
           <div class="benefits-wrapper">
             <p class="benefits-top-text top-text">Стара традиційна школа</p>
-            <h2 class="benefits-title title">Чому приходять саме до нас?</h2>
+            <h2 id="benefits" class="benefits-title title">Чому приходять саме до нас?</h2>
             <p class="benefits-bottom-text bottom-text">
               Про нас говорять лише хороше. Але краще 1 раз побачити та відчути аніж 10 разів
               прочитати.
@@ -187,7 +190,7 @@
       <section class="masters section">
         <div class="container">
           <p class="masters-top-text top-text">Для справжніх шанувальників атмосфери</p>
-          <h2 class="masters-title title">Наші майстри</h2>
+          <h2 id="masters" class="masters-title title">Наші майстри</h2>
           <ul class="masters-list list">
             <li class="masters-item">
               <div class="img-tumb">
@@ -375,7 +378,7 @@
           </section>
 
           <section class="contacts section">
-            <h2 class="contacts-title title">Контакти</h2>
+            <h2 id="contacts" class="contacts-title title">Контакти</h2>
             <address class="contacts-address">
               <ul class="contacts-list list">
                 <li class="contacts-item">
@@ -384,26 +387,25 @@
                     target="_blank"
                     rel="noopener noreferer nofollow"
                     class="contacts-link link"
-                    >ул. Васильківська, 7А <br />
-                    Київ, 08132</a
+                    ><svg class="contacts-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    ул. Васильківська, 7А Київ, 08132</a
                   >
-                  <svg class="contacts-icon placement-top" width="24" height="24">
-                    <use href="./images/icons.svg#icon-map-pin"></use>
-                  </svg>
                 </li>
                 <li class="contacts-item">
-                  <a href="tel:+380441111111" class="contacts-link link">+38 044 111 11 11</a>
-                  <svg class="contacts-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
+                  <a href="tel:+380441111111" class="contacts-link link"
+                    ><svg class="contacts-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone"></use></svg
+                    >+38 044 111 11 11</a
+                  >
                 </li>
                 <li class="contacts-item">
-                  <a href="mailto:barbershop@email.com" class="contacts-link"
+                  <a href="mailto:barbershop@email.com" class="contacts-link">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-mail"></use></svg
                     >barbershop@email.com</a
                   >
-                  <svg class="contacts-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
                 </li>
               </ul>
             </address>
